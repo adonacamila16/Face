@@ -6,10 +6,10 @@ from email.message import EmailMessage
 
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
-server.login('adonathomas@gmail.com', 'adona2548')
+server.login('sender-mail', 'sender passwrd')
 email = EmailMessage()
-email['from'] = 'adonathomas@gmail.com'
-email['to'] = 'adonacamila@cet.ac.in'
-email['subject'] = 'Not Wearing Mask'
-email.set_content('A is not wearing mask')
+email['from'] = 'sender-mail'
+email['to'] = 'Reciever-mail'
+email['subject'] = 'subject'
+email.set_content('content-message')
 server.send_message(email)
