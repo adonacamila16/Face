@@ -1,5 +1,3 @@
-# Python code to illustrate Sending mail from
-# your Gmail account
 import smtplib
 from email.message import EmailMessage
 
