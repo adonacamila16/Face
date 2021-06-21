@@ -6,7 +6,7 @@ while (cap.isOpened()):
     ret, frame = cap.read()
     if ret == False:
         break
-    cv2.imwrite('Adona' + str(i) + '.jpg', frame)
+    cv2.imwrite('Name' + str(i) + '.jpg', frame)
     i += 1
 
 cap.release()
